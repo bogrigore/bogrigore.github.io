@@ -40,7 +40,7 @@ h2 {
      
      height:300px;
      z-index:15;
-     top:40%;
+     top:35%;
      left:15px;
 	 right:15px;
     
@@ -54,7 +54,7 @@ h2 {
 	background-position: center;
 	
 	position: relative;
-	background-color: white;
+	background-color: none;
 	width:200px;
 	height:200px;
 	border-radius:50%;
@@ -70,7 +70,7 @@ h2 {
 	background-position: center;
 	
 	position: relative;
-	background-color: white;
+	background-color: none;
 	width:200px;
 	height:200px;
 	border-radius:50%;
@@ -80,13 +80,13 @@ h2 {
 	}
 
 #horse-btn {
-	background-image: url("content/imagini/cal.jpg");
+	background-image: url("content/imagini/horse.png");
 	background-size: 180px 180px;
 	background-repeat: no-repeat;
 	background-position: center;
 	
 	position: relative;
-	background-color: white;
+	background-color: none;
 	width:200px;
 	height:200px;
 	border-radius:25%;
@@ -96,13 +96,13 @@ h2 {
 	}
 
 #sheep-btn {
-	background-image: url("content/imagini/oaie.jpg");
+	background-image: url("content/imagini/sheep.png");
 	background-size: 180px 180px;
 	background-repeat: no-repeat;
 	background-position: center;
 	
 	position: relative;
-	background-color: white;
+	background-color: none;
 	width:200px;
 	height:200px;
 	border-radius:25%;
