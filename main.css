@@ -18,6 +18,7 @@ h1 {
 	text-align: center;
 	color: #ffffff;
 	font-family: "Lobster", cursive;
+	font-size: 50px;
 	
 	}
 
@@ -47,41 +48,9 @@ h2 {
 	 text-align: center;
 	}
 	
-#dog-btn {
-	background-image: url("content/imagini/dog.png");
-	background-size: 180px 180px;
-	background-repeat: no-repeat;
-	background-position: center;
-	
-	position: relative;
-	background-color: none;
-	width:200px;
-	height:200px;
-	border-radius:50%;
-	display: inline-block;
-	margin: 10px;
-	
-	}
 
-#cow-btn {
-	background-image: url("content/imagini/cow.png");
-	background-size: 180px 180px;
-	background-repeat: no-repeat;
-	background-position: center;
-	
-	position: relative;
-	background-color: none;
-	width:200px;
-	height:200px;
-	border-radius:50%;
-	display: inline-block;
-	margin: 10px;
-	
-	}
-
-#horse-btn {
-	background-image: url("content/imagini/horse.png");
-	background-size: 180px 180px;
+.critter {
+background-size: 180px 180px;
 	background-repeat: no-repeat;
 	background-position: center;
 	
@@ -93,22 +62,6 @@ h2 {
 	display: inline-block;
 	margin: 10px;
 	
-	}
-
-#sheep-btn {
-	background-image: url("content/imagini/sheep.png");
-	background-size: 180px 180px;
-	background-repeat: no-repeat;
-	background-position: center;
-	
-	position: relative;
-	background-color: none;
-	width:200px;
-	height:200px;
-	border-radius:25%;
-	display: inline-block;
-	margin: 10px;
-	
-	}
+}
 
 }

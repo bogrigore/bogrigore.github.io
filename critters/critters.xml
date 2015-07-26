@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<critters>
+<critter>
+	<name>cow</name>
+	<pic>critters/cow/cow.png</pic>
+	<sound>critters/cow/cow.wav</sound>
+	<voice>critters/cow/voice.wav</voice>
+</critter>
+
+<critter>
+	<name>horse</name>
+	<pic>critters/horse/horse.png</pic>
+	<sound>critters/horse/horse.wav</sound>
+	<voice>critters/horse/voice.wav</voice>
+</critter>
+
+<critter>
+	<name>dog</name>
+	<pic>critters/dog/dog.png</pic>
+	<sound>critters/dog/dog.wav</sound>
+	<voice>critters/dog/dog.wav</voice>
+</critter>
+
+<critter>
+	<name>sheep</name>
+	<pic>critters/sheep/sheep.png</pic>
+	<sound>critters/sheep/sheep.wav</sound>
+	<voice>critters/sheep/voice.wav</voice>
+</critter>
+
+<critter>
+	<name>turkey</name>
+	<pic>critters/turkey/turkey.png</pic>
+	<sound>critters/turkey/turkey.wav</sound>
+	<voice>critters/turkey/voice.wav</voice>
+</critter>
+
+<critter>
+	<name>rooster</name>
+	<pic>critters/rooster/rooster.png</pic>
+	<sound>critters/rooster/rooster.wav</sound>
+	<voice>critters/rooster/voice.wav</voice>
+</critter>
+	
+
+</critters>
+
+
