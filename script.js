@@ -11,28 +11,13 @@ function ShuffleArr(arr){
 		arr[current_index] = arr[random_index];
 		arr[random_index] = temporary_value;
 }};
+
+
 function UpdateScore(s) {
 	score+=s;
 	$('#sky h2').addClass('score').text(score + 'p');
 	};
 	
-	
-function LoadAudio(arr) {
-	for(i = 0; i < arr.length; i+=1){
-		var sound_id = "sound" + i ; 
-		var sound_src= arr[i].sound; 
-		// var voice_id = "voice" +i;
-		// var voice_src = arr[i].voice;
-		
-		var sound = '<audio id="' +sound_id+ '">' + '<source src="' + sound_src + '" type="audio/wav"></audio>';
-		// var voice = '<audio id="' +voice_id+ '">' + '<source src="' + voice_src + '" type="audio/wav"></audio>';
-		
-		$(sound).appendTo('body');
-		// $(voice).appendTo('body');
-		arr[i].index = i;
-	}
-
-};
 
 
 function DrawCritters(arr){
@@ -43,6 +28,7 @@ function DrawCritters(arr){
 	
 	var btn = '<div id = "btn' + i + '"></div>';
 	$(btn).appendTo("#container").addClass('critter').css({"background-image": "url(" + arr[i].pic + ")"});
+	$("#btn"+i).animate({"background-size":"180px"},1500);
 	}
 	seed = Math.floor(Math.random() * 3);
 	
@@ -51,25 +37,27 @@ function DrawCritters(arr){
 		
 		if (i == seed){
 			
+			console.log(arr[seed]);
 			sound_Loop = setInterval(function() { 
-			$("#sound"+arr[seed].index).prop('currentTime', 0).trigger('play');
+			arr[seed].sound.play();
 				
 	
 			}, 3000);
 			
 			$("#btn" +seed).on("click", function() {
 					clearInterval(sound_Loop);
-					$("#sound"+arr[seed].index).trigger('pause');
-					$("#clink").trigger('play');
+					critter[i].sound.stop()
+					right_snd.play();
 					UpdateScore(10);
-					ShuffleArr(Critter);
-					DrawCritters(arr);
+					ShuffleArr(critter);
+					DrawCritters(critter);
 				});
 		}
 		else {
 		 $("#btn" +i).on("click", function() {
-			
-			$("#wrong").trigger("play");
+		
+			$(this).animate({'top': '-3000px'}, 1000);
+			wrong_snd.play();
 			UpdateScore(-3);
 		});
 		}
@@ -85,9 +73,8 @@ var score = 0;
 
 var main = function() {
 	
-	LoadAudio(Critter);
 	
-	DrawCritters(Critter);
+	DrawCritters(critter);
 	
 	
 	

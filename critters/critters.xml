@@ -15,10 +15,17 @@
 </critter>
 
 <critter>
+	<name>rooster</name>
+	<pic>critters/rooster/rooster.png</pic>
+	<sound>critters/rooster/roost.wav</sound>
+	<voice>critters/rooster/voice.wav</voice>
+</critter>
+
+<critter>
 	<name>dog</name>
 	<pic>critters/dog/dog.png</pic>
 	<sound>critters/dog/dog.wav</sound>
-	<voice>critters/dog/dog.wav</voice>
+	<voice>critters/dog/voice.wav</voice>
 </critter>
 
 <critter>
